@@ -9,7 +9,7 @@
   &.page-civicrm-import-custom {
     #upload-file {
       > .crm-submit-buttons {
-        @extend %submit-buttons-civi;
+        @extend %submit-buttons-civi !optional;
         min-height: 43px;
         margin: 20px 0 0 0 !important;
 
@@ -46,7 +46,7 @@
     }
 
     h3 {
-      @extend .collapsible-title;
+      @extend .collapsible-title !optional;
       margin-top: 20px;
     }
 
@@ -70,7 +70,7 @@
   #map-field {
     > table {
       margin-bottom: 20px;
-      @extend %civihr-table;
+      @extend %civihr-table !optional;
       width: 100% !important;
       box-shadow: none !important;
       border: 1px solid $crm-background;
@@ -85,7 +85,7 @@
 
   @at-root {
     select.crm-form-select {
-      @extend .select2-container;
+      @extend .select2-container !optional;
     }
   }
 

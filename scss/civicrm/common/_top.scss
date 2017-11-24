@@ -1,10 +1,10 @@
 %title {
-  @extend %open-sans-font-family;
+  @extend %open-sans-font-family !optional;
   font-weight: 600 !important;
 }
 
 .page-civicrm {
-  @extend %open-sans-font-family;
+  @extend %open-sans-font-family !optional;
 
   #toolbar {
     box-shadow: none !important;
@@ -32,7 +32,7 @@
     color: #ffffff !important;
 
     .breadcrumb {
-      @extend %breadcrumb;
+      @extend %breadcrumb !optional;
       left: 10px;
       color: transparent;
 
@@ -44,7 +44,7 @@
         padding: 0 5px;
 
         &:not(:last-of-type)::after {
-          @extend %breadcrumb-divider;
+          @extend %breadcrumb-divider !optional;
           position: absolute;
           right: -10px;
         }
@@ -52,7 +52,7 @@
     }
 
     h1 {
-      @extend %title;
+      @extend %title !optional;
       float: none;
       width: 100%;
       display: block;
@@ -67,7 +67,7 @@
   }
 
   h2 {
-    @extend %title;
+    @extend %title !optional;
   }
 
   #console {

@@ -60,7 +60,7 @@ ul.civihr-popup {
     text-align: right;
 
     a.button {
-      @extend %btn-civi-primary;
+      @extend %btn-civi-primary !optional;
 
       &:last-child {
         margin-right: 0;
@@ -68,15 +68,15 @@ ul.civihr-popup {
     }
 
     .crm-button {
-      @extend %btn-civi;
+      @extend %btn-civi !optional;
 
       &[crm-icon=fa-check] {
-        @extend %btn-civi-primary;
+        @extend %btn-civi-primary !optional;
         padding: 8px 19px;
       }
 
       &[crm-icon=fa-times] {
-        @extend %btn-civi-secondary-outline;
+        @extend %btn-civi-secondary-outline !optional;
         color: $gray;
         border: solid 1px $gray-dark;
         padding: 7px 19px;

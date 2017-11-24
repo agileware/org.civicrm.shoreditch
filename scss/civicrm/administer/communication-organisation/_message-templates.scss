@@ -22,5 +22,5 @@
 #email_greeting,
 #postal_greeting,
 #addressee {
-  @extend .dataTables_wrapper;
+  @extend .dataTables_wrapper !optional;
 }

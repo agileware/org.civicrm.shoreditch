@@ -201,7 +201,7 @@
     height: auto;
 
     a.newGroup.button {
-      @extend %btn-civi-primary;
+      @extend %btn-civi-primary !optional;
 
       .crm-i {
         bottom: 1px;
@@ -216,7 +216,7 @@
     overflow: hidden;
 
     h3 {
-      @extend .collapsible-title;
+      @extend .collapsible-title !optional;
       background: $gray-lighter;
       border: none;
       border-bottom: 1px solid $crm-dark-grayblue;
@@ -454,7 +454,7 @@
   }
 
   .crm-search-tasks {
-    @extend %search-filter-block;
+    @extend %search-filter-block !optional;
   }
 
   #alpha-filter {
@@ -518,7 +518,7 @@
     }
 
     h3 {
-      @extend .collapsible-title;
+      @extend .collapsible-title !optional;
       margin-top: 20px;
     }
 

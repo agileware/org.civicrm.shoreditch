@@ -77,13 +77,13 @@
 
   table {
     &.mergecontact {
-      @extend %civihr-table;
+      @extend %civihr-table !optional;
     }
   }
 
   #DedupeRules {
     h3 {
-      @extend .collapsible-title;
+      @extend .collapsible-title !optional;
       margin-bottom: 0;
     }
 
@@ -105,7 +105,7 @@
       }
 
       .form-layout-compressed {
-        @extend %civihr-table;
+        @extend %civihr-table !optional;
         width: 100% !important;
         box-shadow: none !important;
         border: 1px solid $crm-background;

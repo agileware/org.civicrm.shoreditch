@@ -22,7 +22,7 @@
   }
 
   #dedupeExceptions {
-    @extend %civihr-table;
+    @extend %civihr-table !optional;
   }
 
   .ui-toolbar {

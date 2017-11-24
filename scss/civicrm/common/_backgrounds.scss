@@ -10,14 +10,14 @@
   }
 
   h1.page-title {
-    @extend %block-with-shadow;
+    @extend %block-with-shadow !optional;
   }
 
   .crm-container {
     background: inherit;
 
     .crm-form-block {
-      @extend %block-with-shadow;
+      @extend %block-with-shadow !optional;
       border-radius: 0;
       padding: 0;
       margin: 0;

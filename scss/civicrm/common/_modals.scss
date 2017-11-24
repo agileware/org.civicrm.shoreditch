@@ -12,7 +12,7 @@
   }
 
   table {
-    @extend %crm-table;
+    @extend %crm-table !optional;
 
     td {
       background: $crm-white;
@@ -33,7 +33,7 @@
   }
 
   .ui-dialog-titlebar {
-    @extend .modal-header, %open-sans-font-family;
+    @extend .modal-header, %open-sans-font-family !optional;
     border: none !important;
     border-bottom: 1px solid $crm-dark-grayblue !important;
     box-shadow: $crm-contribute-form-shadow;
@@ -43,7 +43,7 @@
     z-index: 99999;
 
     .ui-dialog-title {
-      @extend .modal-title, %open-sans-font-family;
+      @extend .modal-title, %open-sans-font-family !optional;
       background: none;
       font-size: $font-size-h2;
       font-weight: $crm-font-weight-h2;
@@ -85,7 +85,7 @@
   }
 
   .ui-dialog-content {
-    @extend .modal-body, %open-sans-font-family;
+    @extend .modal-body, %open-sans-font-family !optional;
     @include calc(max-height, '100vh - 280px',!important);
     background: $crm-white;
     color: $gray-darker;
@@ -99,7 +99,7 @@
 
 
     a.button:not(.hr-job-info-close) {
-      @extend .btn-primary;
+      @extend .btn-primary !optional;
     }
 
     h3 {
@@ -130,7 +130,7 @@
   }
 
   .ui-dialog-buttonpane {
-    @extend .modal-footer, %open-sans-font-family;
+    @extend .modal-footer, %open-sans-font-family !optional;
     background: $gray-lighter;
     border-top: 1px solid $crm-dark-grayblue !important;
     box-shadow: $crm-contribute-form-shadow;

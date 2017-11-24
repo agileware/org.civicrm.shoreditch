@@ -3,7 +3,7 @@
 }
 
 .crm-accordion-header {
-  @extend %no-border-radius;
+  @extend %no-border-radius !optional;
   background: $crm-accordion-header-color !important;
   background-image: none !important;
   color: $gray-darker;
@@ -23,7 +23,7 @@
   }
 
   &.crm-master-accordion-header {
-    @extend %open-sans-font-family;
+    @extend %open-sans-font-family !optional;
     background: $brand-primary !important;
     border-radius: $border-radius-base $border-radius-base 0 0 !important;
     color: $crm-white !important;
@@ -111,7 +111,7 @@
 }
 
 .crm-accordion-body {
-  @extend %no-border-radius;
+  @extend %no-border-radius !optional;
   background: $crm-white;
   border: 0;
   color: $crm-h3-color;

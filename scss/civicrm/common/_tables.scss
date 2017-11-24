@@ -5,7 +5,7 @@ table {
 }
 
 %crm-table {
-  @extend %open-sans-font-family;
+  @extend %open-sans-font-family !optional;
   $border-color: $table-border-color;
   border: 0;
   border-radius: $border-radius-base;
@@ -83,7 +83,7 @@ table {
 }
 
 %civihr-table {
-  @extend %crm-table;
+  @extend %crm-table !optional;
 
   &:not(.report-layout) {
     box-shadow: $box-shadow;
@@ -148,7 +148,7 @@ table {
 }
 
 @mixin mx-expandable-table {
-  @extend %civihr-table;
+  @extend %civihr-table !optional;
   background: transparent;
   border: none;
   border-radius: $panel-border-radius;
@@ -330,6 +330,6 @@ table {
   #summary-counts,
   #DataTables_Table_0,
   #DataTables_Table_1 {
-    @extend %civihr-table;
+    @extend %civihr-table !optional;
   }
 }

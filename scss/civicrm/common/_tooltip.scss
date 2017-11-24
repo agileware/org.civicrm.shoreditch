@@ -2,7 +2,7 @@
   background-image: none !important;
 
   .crm-tooltip {
-    @extend %block-with-shadow;
+    @extend %block-with-shadow !optional;
     background: $crm-dark-blue !important;
     border-radius: $border-radius-base;
 

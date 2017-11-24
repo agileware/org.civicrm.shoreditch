@@ -1,7 +1,7 @@
 .CRM_Contact_Form_Search_Advanced .crm-results-block,
 .CRM_Contact_Form_Search_Basic .crm-results-block,
 .CRM_Event_Form_Search .crm-results-block {
-  @extend %block-with-shadow;
+  @extend %block-with-shadow !optional;
   border-radius: $border-radius-base;
   margin-top: 20px;
 
@@ -120,7 +120,7 @@
   }
 
   table.selector {
-    @extend %crm-table;
+    @extend %crm-table !optional;
     border-top: solid 1px $crm-dark-grayblue;
     clear: both;
     margin-top: 0 !important;
@@ -175,7 +175,7 @@
     }
 
     ul.panel {
-      @extend %block-with-shadow;
+      @extend %block-with-shadow !optional;
       border: solid 1px $crm-background !important;
       margin-top: 10px !important;
 

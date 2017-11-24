@@ -9,7 +9,7 @@
   }
 
   input.crm-form-submit {
-    @extend .btn-sm;
+    @extend .btn-sm !optional;
     margin-left: 20px !important;
   }
 }

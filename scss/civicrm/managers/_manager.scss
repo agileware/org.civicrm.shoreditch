@@ -5,7 +5,7 @@
     height: auto;
 
     > a.button {
-      @extend .btn-primary;
+      @extend .btn-primary !optional;
     }
   }
 

@@ -1576,7 +1576,7 @@ form.CRM_Contribute_Form_ContributionCharts {
   }
 
   table {
-    @extend %civihr-table;
+    @extend %civihr-table !optional;
     border: none;
     border-radius: $panel-border-radius;
     margin: 30px 0 20px;
