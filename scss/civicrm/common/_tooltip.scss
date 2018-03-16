@@ -4,6 +4,7 @@
   background: none !important;
   overflow: visible !important;
   padding-bottom: 0 !important;
+  margin-left: -20px;
 
   .crm-tooltip {
     @include box-shadow($box-shadow);
